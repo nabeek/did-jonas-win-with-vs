@@ -9,8 +9,8 @@ Jonas. Bless his heart. He plays the same hero in every game of [DotA](https://e
 The additional... functionality of the "triggered slider" was inspired by visiting [Money printer go BRRR](https://brrr.money/) a few weeks ago.
 
 # Screenshots
-<img align="center" src="https://raw.githubusercontent.com/nabeek/did-jonas-win-with-vs/master/assets/images/vs_screenshot.png?token=ABEIMKMLGWJI5ZGDJ6W6SYC6UHRI6">
-<img align="center" src="https://raw.githubusercontent.com/nabeek/did-jonas-win-with-vs/master/assets/images/vs_preview.gif?token=ABEIMKNQG6STG4WTOFXL2526UHQ4Y">
+![Landing Page](https://raw.githubusercontent.com/nabeek/did-jonas-win-with-vs/master/assets/images/vs_screenshot.png?token=ABEIMKMLGWJI5ZGDJ6W6SYC6UHRI6)
+![Website Interaction](https://raw.githubusercontent.com/nabeek/did-jonas-win-with-vs/master/assets/images/vs_preview.gif?token=ABEIMKNQG6STG4WTOFXL2526UHQ4Y)
 
 # Tech Used
 
