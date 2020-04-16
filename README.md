@@ -4,7 +4,7 @@ We're all asking ourselves the question, "Did Jonas win the last time he played 
 
 # Motivation
 
-Jonas. Bless his heart. He plays the same hero in every game of [DotA](https://en.wikipedia.org/wiki/Dota_2) and I genuinely cannot comprehend the mental fortitude (or lack thereof) needed to do that. As I was working on updating my personal website and portfolio (which... I probably should have spent these hours towards), I had a stroke of inspiration. After learning how to execute API calls in my coding bootcamp, I remembered that most of the data associated with DotA matches is all publicly available. Add to that, the folks at [<OPENDOTA/>](https://www.opendota.com/) have built and maintain an incredible API with excellent documentation, and so here we are about 16 coding hours later.
+Jonas. Bless his heart. He plays the same hero in every game of [DotA](https://en.wikipedia.org/wiki/Dota_2) and I genuinely cannot comprehend the mental fortitude (or lack thereof) needed to do that. As I was working on updating my personal website and portfolio (which... I probably should have spent these hours towards), I had a stroke of inspiration. After learning how to execute API calls in my coding bootcamp, I remembered that most of the data associated with DotA matches is all publicly available. Add to that, the folks at [OPENDOTA](https://www.opendota.com/) have built and maintain an incredible API with excellent documentation, and so here we are about 16 coding hours later.
 
 The additional... functionality of the "triggered slider" was inspired by visiting [Money printer go BRRR](https://brrr.money/) a few weeks ago.
 
@@ -21,7 +21,7 @@ The additional... functionality of the "triggered slider" was inspired by visiti
 [Font Awesome](https://fontawesome.com)\
 [jQuery](https://jquery.com)\
 [Moment.js](https://momentjs.com)\
-[<OPENDOTA/>](https://docs.opendota.com/)
+[OPENDOTA](https://docs.opendota.com/)
 
 # Challenges
 
