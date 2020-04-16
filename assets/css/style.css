@@ -1,1 +1,54 @@
-/* shake css : https://elrumordelaluz.github.io/csshake/ */
+/* Application-wide styling */
+body {
+    /* background-color: #FDFDFF; */
+    background-color: #0E1111;
+}
+
+
+/* Element styling */
+#result-page,
+#slidecontainer {
+    display: none;
+}
+
+#landing-page,
+#result-page {
+    font-family: Radiance-Bold;
+}
+
+#project-title,
+#kda {
+    color: #908D8B;
+}
+
+#vs-mini {
+    cursor: pointer;
+}
+
+#imgDiv {
+    margin-bottom: 24px;
+}
+
+#slidecontainer {
+    margin-bottom: 2rem;
+}
+
+.slider {
+    width: 200px;
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+
+/* Footer-specific styling */
+#footer {
+    margin: 3rem 0rem;
+}
+
+#nabeek-link:hover,
+#match-id:hover {
+    cursor: pointer;
+    color: #3273DC;
+}

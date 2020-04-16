@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did Jonas win with VS?</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/favicon.ico">
+
+</head>
+<body>
+
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered" id="landing-page">
+                <p class="title is-2" id="project-title">Did Jonas win with VS?</p>
+                <br>
+                <div>
+                    <img src="./assets/images/vs_minimap_icon.png" alt="Vengeful Spirit" id="vs-mini">
+                </div>
+                
+            </div>
+
+            <div class="container has-text-centered" id="result-page">
+                <p class="title is-3" id="project-title"><span id="win-or-loss"></span></p>
+                <p class="subtitle is-4" id="kda"></p>
+                <br>
+                <div id="imgDiv">
+                    <img src="./assets/images/vs_large.png" alt="Vengeful Spirit" id="vs-large">
+                    <p>reeeee</p>
+                </div>
+                <br>
+                <p class="subtitle">Match ID: <span id="match-id"></span></p>
+            </div>
+        </div>
+
+        <!--Trigger slider begins -->
+        <div class="hero-foot" id="slidecontainer">
+            <div class="container has-text-centered">
+                <p><small>How triggering was this loss?</small></p>
+                <input class="slider" step="1" min="0" max="100" value="0" type="range">
+            </div>
+        </div>
+        <!--Trigger slider ends -->
+
+        <!-- Beginning of footer -->
+        <div class="hero-foot" id="footer">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><small><span id="nabeek-link" onclick="window.open('https://nabeek.github.io')">nabeek made this</span>, copyright &copy; <span id="copyright-year"></span></small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of footer -->
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
