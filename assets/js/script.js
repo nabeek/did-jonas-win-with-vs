@@ -49,7 +49,7 @@ vsMini.click(function() {
     call.then(function() {
         $("#landing-page").hide();
         $("#result-page").show();
-        $("#slidecontainer").show();
+        $("#slide-container").show();
     });
 
     $(".slider").on("input", function() {
@@ -66,6 +66,7 @@ vsMini.click(function() {
             $("#ree").text("REEEE" + str.repeat(ree/10));
         } else if ($(window).width() <= 768) {
             $("#ree").css("font-size", (ree * 2) + "px");
+            $("#ree").css("right", (ree / 3) + "px");
             $("#ree").text("REEEE" + str.repeat(ree/10));
         };
 

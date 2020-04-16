@@ -7,7 +7,7 @@ body {
 
 /* Element styling */
 #result-page,
-#slidecontainer {
+#slide-container {
     display: none;
 }
 
@@ -54,7 +54,7 @@ body {
     }
 }
 
-#slidecontainer {
+#slide-container {
     margin-bottom: 2rem;
 }
 
