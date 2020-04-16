@@ -60,13 +60,9 @@ vsMini.click(function() {
             $("#ree").css("font-size", (ree * 3) + "px");
             $("#ree").css("right", (ree * 2) + "px");
             $("#ree").text("REEEE" + str.repeat(ree/6));
-        } else if ($(window).width() >= 769 && $(window).width() < 1024) {
+        } else if ($(window).width() < 1024) {
             $("#ree").css("font-size", (ree * 2) + "px");
             $("#ree").css("right", (ree) + "px");
-            $("#ree").text("REEEE" + str.repeat(ree/10));
-        } else if ($(window).width() <= 768) {
-            $("#ree").css("font-size", (ree * 2) + "px");
-            $("#ree").css("right", (ree / 3) + "px");
             $("#ree").text("REEEE" + str.repeat(ree/10));
         };
 

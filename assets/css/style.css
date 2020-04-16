@@ -58,12 +58,13 @@ body {
     margin-bottom: 2rem;
 }
 
-.slider {
-    width: 200px;
+.slider:focus,
+.slider:active {
+    outline: 0;
 }
 
-.slider::-webkit-slider-thumb {
-    cursor: pointer;
+.slider {
+    width: 250px;
 }
 
 

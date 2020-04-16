@@ -1,0 +1,61 @@
+/* Webkit */
+input[type=range],
+input[type=range], 
+input[type=range] {
+	-webkit-appearance: none;
+	border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+    background-color: #fff;
+}
+
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb,
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+    background: url("../images/vs_minimap_icon.png") no-repeat;
+    border: none;
+    cursor: pointer;
+	width: 32px;
+    height: 32px;
+    margin-top: 0;
+}
+
+
+/* Firefox */
+input[type=range]::-moz-range-track {
+	border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+	background-color: #fff;
+}
+
+input[type=range]::-moz-range-thumb {
+    background: url("../images/vs_minimap_icon.png") no-repeat;
+    border: none;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+
+
+/* IE */
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+	background: transparent;
+}
+
+input[type="range"]::-ms-track {
+    border-radius: 8px;
+	height: 7px;
+	border: 1px solid #bdc3c7;
+	background-color: #fff;
+}
+
+input[type="range"]::-ms-thumb {
+    background: url("../images/vs_minimap_icon.png") no-repeat;
+	border: none;
+	width: 32px;
+	height: 32px;
+    cursor: pointer;
+}
