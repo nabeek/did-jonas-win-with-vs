@@ -6,7 +6,6 @@ let callURL = "https://api.opendota.com/api/players/30614351/matches"
     + "&hero_id=20"
     + "&limit=1";
 
-
 // Execute ajax call on-click
 
 vsMini.click(function() {
@@ -16,8 +15,7 @@ vsMini.click(function() {
     });
     
     var success = function(response) {
-        let imgDiv = $("#imgDiv")
-        console.log(response)
+
         matchID = response[0].match_id
 
         if (response[0].player_slot <= 127 && response[0].radiant_win == true) {
@@ -26,7 +24,6 @@ vsMini.click(function() {
             result = "won";
         } else {
             result = "lost";
-            imgDiv.addClass("shake-little shake-constant");
         }
     
         $("#win-or-loss").text("Jonas " + result + "!");
@@ -55,8 +52,37 @@ vsMini.click(function() {
         $("#result-page").show();
         $("#slidecontainer").show();
     });
-});
 
+    $(".slider").on("input", function() {
+        let ree = $(this).val();
+        let str = "E";
+        $("#ree").css("font-size", (ree * 3) + "px")
+        $("#ree").css("right", (ree * 2) + "px")
+        $("#ree").text("REEEE" + str.repeat(ree/6))
+
+        if (ree > 0 && ree <= 40) {
+            $("#ree").attr("class", "shake-slow shake-constant");
+            $("#imgDiv").attr("class", "shake-little shake-constant");
+        } else if (ree > 40 && ree <= 80) {
+            $("#ree").attr("class", "shake shake-slow shake-constant");
+        } else if (ree > 80 && ree <= 130) {
+            $("#ree").attr("class", "shake-hard shake-constant");
+            $("#imgDiv").attr("class", "shake-hard shake-constant");
+        } else if (ree > 130) {
+            $("#imgDiv").attr("class", "shake-crazy shake-constant");
+            $("#ree").attr("class", "shake-crazy pulse");
+        } else {
+            $("#imgDiv").removeClass();
+        };
+
+        if (ree > 80) {
+            $("#result-page").attr("class", "container has-text-centered shake-hard shake-constant");
+        } else {
+            $("#result-page").attr("class", "container has-text-centered")
+        };
+    });
+
+});
 
 // Auto-update copyright year
 
