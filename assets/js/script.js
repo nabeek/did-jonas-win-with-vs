@@ -1,13 +1,12 @@
 // Define global variables
-
 let vsMini = $("#vs-mini");
 let callURL = "https://api.opendota.com/api/players/30614351/matches"
     + "?significant=0"
     + "&hero_id=20"
     + "&limit=1";
 
-// Execute ajax call on-click
 
+// Execute ajax call on-click
 vsMini.click(function() {
     var call = $.ajax({
         url: callURL,
@@ -56,9 +55,16 @@ vsMini.click(function() {
     $(".slider").on("input", function() {
         let ree = $(this).val();
         let str = "E";
-        $("#ree").css("font-size", (ree * 3) + "px")
-        $("#ree").css("right", (ree * 2) + "px")
-        $("#ree").text("REEEE" + str.repeat(ree/6))
+        
+        if ($(window).width() >= 1024) {
+            $("#ree").css("font-size", (ree * 3) + "px");
+            $("#ree").css("right", (ree * 2) + "px");
+            $("#ree").text("REEEE" + str.repeat(ree/6));
+        } else if ($(window).width() < 1024) {
+            $("#ree").css("font-size", (ree * 2) + "px");
+            $("#ree").css("right", (ree) + "px");
+            $("#ree").text("REEEE" + str.repeat(ree/10));
+        };
 
         if (ree > 0 && ree <= 40) {
             $("#ree").attr("class", "shake-slow shake-constant");
@@ -80,10 +86,11 @@ vsMini.click(function() {
         } else {
             $("#result-page").attr("class", "container has-text-centered")
         };
+
     });
 
 });
 
-// Auto-update copyright year
 
+// Auto-update copyright year
 $("#copyright-year").text(moment().format("YYYY"));
