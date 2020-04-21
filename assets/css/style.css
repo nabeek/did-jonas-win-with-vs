@@ -74,7 +74,8 @@ body {
 }
 
 #nabeek-link:hover,
-#match-id:hover {
+#match-id:hover,
+#repo-link:hover {
     cursor: pointer;
     color: #3273DC;
 }
